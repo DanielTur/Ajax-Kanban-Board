@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #d5e1df;
+  background-size: cover;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/* -= BOARD =- */
+
+div.board h1 {
+  font-family: 'Monofett', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #86af49;
+  margin-bottom: 60px;
+}
+
+div.board button.create-column {
+  text-align: center;
+  order: 2;
+  background-color: #86af49;
+  color: #e3eaa7;
+  margin: 20px 0;
+  cursor: pointer;
+  font-size: 40px;
+  width: 70px;
+  height: 66px;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+div.board button.create-column:hover {
+  color: white;
+  transform: scaleX(1.05);
+  transition-duration: 0.3s;
+}
+
+div.column-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button.btn-delete {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+} 
+
+/* -= COLUMN =- */
+
+div.column {
+  order: 1;
+  min-width: 300px;
+  min-height: 400px;
+  margin-left: 8px;
+  position: relative;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 20px;
+  background-color: #86af49;
+}
+
+div.column ul.card-list {
+  background-color: lightgrey;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.ui-sortable {
+  min-height: 400px;
+  list-style: none;
+}
+
+button.column-add-card {
+  background-color: #e3eaa7;
+  color: #86af49;
+  cursor: pointer;
+  font-size: 40px;
+  width: 300px;
+  height: 60px;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+button.column-add-card:hover {
+  background-color: #b5e7a0; 
+  transform: scaleY(1.05);
+  transition-duration: 0.3s;
+}
+
+h2.column-title {
+  text-align: center; 
+  color: #e3eaa7;
+  min-height: 20px;
+}
+
+/* -= CARD =- */
+
+li.card {
+  display: block;
+  min-height: 60px;
+  max-width: 300px;
+  margin-bottom: 2px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ecf0f1;
+  cursor: pointer;
+}
+
+p.card-description {
+  margin: 15px 0;
+  font-size: 22px;
+  word-wrap: break-word;
+}
+
+.card-placeholder {
+  display: block;
+  min-height: 60px;
+  margin-bottom: 5px;
+  background-color: #e3eaa7;
+}
